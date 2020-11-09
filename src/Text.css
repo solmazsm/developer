@@ -1,0 +1,24 @@
+.text{
+    display: inline-flex;
+height: 100%;
+    font-size: 35px;
+   position: sticky;
+    color: beige;
+    background-color:rgb(52, 58, 64);
+    width: 50%;
+    text-align: centery;
+   
+}
+.text1{
+  
+    width: 50%;
+    font-size: 20px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: beige;
+    background-color:rgb(52, 58, 64);
+    text-align: center;
+ display: inline-flexbox;
+}
