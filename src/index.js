@@ -16,8 +16,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import {BrowserRouter as Router,Route,
   Redirect,Switch} from 'react-router-dom';
-  import About from './About'
-import { Link, browserHistory, IndexRoute } from 'react-router'
+  import About from './About';
+import { Link, browserHistory, IndexRoute } from 'react-router';
+
+import { BrowserRouter } from "react-router-dom";
 
 WebFont.load({
   google: {
@@ -28,7 +30,7 @@ ReactDOM.render(
   
  
   
- 
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
 
 <Router >
      
@@ -51,7 +53,9 @@ ReactDOM.render(
         </Switch>
         
      
-   </Router>,
+   </Router>
+   </BrowserRouter>,
+
   document.getElementById('root'),
 
 );
