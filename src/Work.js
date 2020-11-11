@@ -25,14 +25,14 @@ const Work = () =>{
   <Button variant="contained" color="primary">
                   <FontAwesomeIcon icon={faEnvelope}/>
                     
-     <span style={{ fontFamily:"'Caveat', cursive", color:"graye", fontSize:"10px"}} > Email: solmazseyedmonir@yahoo.com </span>
+     <span style={{ fontFamily:"'Caveat', cursive", color:"graye", fontSize:"15px"}} > Email: solmazseyedmonir@yahoo.com </span>
                           
                       
              </Button>
              <Button variant="contained" color="primary" href="https://linkedin.com/in/solmaz-seyedmonir/">
                   <FontAwesomeIcon icon={ faLinkedin }/>
                     
-     <span style={{ fontFamily:"'Caveat', cursive", color:"graye", fontSize:"10px"}} > Linkedin</span>
+     <span style={{ fontFamily:"'Caveat', cursive", color:"graye", fontSize:"15px"}} > Linkedin</span>
                           
                       
              </Button>
@@ -40,7 +40,7 @@ const Work = () =>{
              <Button variant="contained" color="primary" href="https://github.com/solmazsm">
                   <FontAwesomeIcon icon={ faGithub }/>
                     
-     <span style={{ fontFamily:"'Caveat', cursive", color:"graye", fontSize:"10px"}} > Github</span>
+     <span style={{ fontFamily:"'Caveat', cursive", color:"graye", fontSize:"15px"}} > Github</span>
                           
                       
              </Button>
