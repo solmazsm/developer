@@ -33,7 +33,7 @@ ReactDOM.render(
  
 <Router>
     <Switch>
-    <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
+    <BrowserRouter basename="/developer">
       <Route exact path="/">
         <Navi />
         <Text />
