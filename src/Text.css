@@ -22,3 +22,13 @@ height: 100%;
     text-align: center;
  display: inline-flexbox;
 }
+.player-wrapper {
+    position:fixed;
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  }
+   
+  .react-player {
+   position: fixed;
+    top: 50%;
+    left: 0;
+  }

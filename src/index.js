@@ -17,9 +17,11 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import {BrowserRouter as Router,Route,
   Redirect,Switch} from 'react-router-dom';
   import About from './About';
-import { Link, browserHistory, IndexRoute } from 'react-router';
+import {  browserHistory, IndexRoute } from 'react-router';
 
 import { BrowserRouter } from "react-router-dom";
+import { Link } from 'react-router-dom'
+
 
 WebFont.load({
   google: {
@@ -29,35 +31,27 @@ WebFont.load({
 ReactDOM.render(
   
  
-  
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
-
-<Router >
-     
-        
-<Switch>
-          <Route exact path="/">
-            <Navi />
-           <Text />
-           <Work />
-           <Footer />
-          </Route>
-          <Route path="/about">
-            
-            <Navi />
-            <About />
-            <Work />
-           <Footer />
-          </Route>
-         
-        </Switch>
-        
-     
-   </Router>
-   </BrowserRouter>,
-
-  document.getElementById('root'),
-
+<Router>
+    <Switch>
+    <BrowserRouter basename="/develop">
+      <Route exact path="/">
+        <Navi />
+        <Text />
+        <Work />
+        <Footer />
+      </Route>
+    
+      <Route path="/about">
+      <Link to="/about"/>
+      
+        <About />
+        <Work />
+        <Footer />
+      </Route>
+      </BrowserRouter>
+    </Switch>
+  </Router>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

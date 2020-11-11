@@ -4,10 +4,12 @@ import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
 class About extends React.Component {
     render() {
        return (
-          <div>
+        <div id="c">
              <h1>About...</h1>
           </div>
        )
     }
  }
+
+
  export default About;

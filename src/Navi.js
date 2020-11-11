@@ -8,19 +8,27 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import About from './About'
 import {fab,  faLinkedin, faGithub, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import ReactDOM from 'react-dom';
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
+import {  Link, browserHistory, IndexRoute } from 'react-router'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useParams,
+} from "react-router-dom";
 
+import { BrowserRouter } from "react-router-dom";
 class Navi extends React.Component {
     render(){
         return(
+          <Router>
           <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="./">
             <span style={{fontFamily:"'Lobster', cursive", fontSize:"25px", margin:"20px"}}>Solmaz Seyed Monir</span></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="#features"> <span style={{fontFamily:"'Lobster', cursive", fontSize:"20px"}}>Work</span></Nav.Link>
-              <Nav.Link href="./about"><span style={{fontFamily:"'Lobster', cursive", fontSize:"20px"}}>About</span></Nav.Link>
+              <Nav.Link href="/about" ><span style={{fontFamily:"'Lobster', cursive", fontSize:"20px"}}>About</span></Nav.Link>
               <NavDropdown title="Blog" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="http://535fall2018solmazmonir.blogspot.com/" className="drop">Data Center</NavDropdown.Item>
                 <NavDropdown.Item href="https://htmlsolmazseyedmonirsep2020.blogspot.com/" className="drop">Website 1</NavDropdown.Item>
@@ -45,7 +53,17 @@ class Navi extends React.Component {
           <br /><br />
         </Navbar>
 
+        <br />
+
+
+
         
+                            
+                        </Router>
+
+
+
+
     )
   }
 }
